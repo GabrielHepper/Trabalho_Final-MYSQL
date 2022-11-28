@@ -3,13 +3,14 @@ Gabriel Hepper
 CREATE DATABASE DOTA2;
 USE DOTA2;
 
+/*Criação da tabela partida, "id_da_partida" é a chave primária, "id_do_time_anfitriao" e "id_do_time_visitante" são os "ids_dos_times" da tabela times*/
 CREATE TABLE partida (
 id_da_partida INT PRIMARY KEY NOT NULL,
 id_do_time_anfitriao INT NOT NULL,
 id_do_time_visitante INT NOT NULL,
 dia_da_partida VARCHAR(30) NOT NULL);
 
-
+/*Criação da tabela times*/
 CREATE TABLE times (
 id_do_time INT PRIMARY KEY NOT NULL,
 nome_do_time VARCHAR(20) NOT NULL,
